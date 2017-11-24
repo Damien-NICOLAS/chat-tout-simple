@@ -16,10 +16,10 @@ public class ServeurUDP {
         datagramSocket.receive(datagramPacket);
         System.out.println(datagramPacket.getAddress() + " a envoyé :");
 
-        this.dataReception = datagramPacket.getData();
-        String test = String.copyValueOf;
 
-        System.out.println(this.dataReception.toString());
-        System.out.println(buffer.toString());
+        this.dataReception = datagramPacket.getData();
+        String test = new String(dataReception);
+
+        System.out.println(test);
     }
 }
