@@ -15,7 +15,7 @@ public class ClientTCP {
         BufferedReader in = new BufferedReader(new InputStreamReader(socketDistante.getInputStream()));
         PrintStream out = new PrintStream(socketDistante.getOutputStream());
 
-        System.out.println(out);
+        System.out.println("Test de connexion");
 
 
     }
