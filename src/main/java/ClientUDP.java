@@ -8,7 +8,7 @@ public class ClientUDP {
 
     public ClientUDP(String adresse, int port) throws IOException {
 
-        byte[] data = new byte[100];
+        byte[] data;
 
         String chainetest = "Tentative De Connexion";
         data = chainetest.getBytes();

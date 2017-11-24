@@ -18,7 +18,9 @@ public class ServeurUDP {
 
 
         this.dataReception = datagramPacket.getData();
+
         String test = new String(dataReception);
+
 
         System.out.println(test);
     }
