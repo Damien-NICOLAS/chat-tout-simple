@@ -17,7 +17,9 @@ public class ServeurUDP {
         System.out.println(datagramPacket.getAddress() + " a envoyé :");
 
         this.dataReception = datagramPacket.getData();
+        String test = String.copyValueOf;
 
-        System.out.println(this.dataReception);
+        System.out.println(this.dataReception.toString());
+        System.out.println(buffer.toString());
     }
 }
