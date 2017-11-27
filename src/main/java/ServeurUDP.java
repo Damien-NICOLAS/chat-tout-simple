@@ -18,10 +18,12 @@ public class ServeurUDP {
 
 
         this.dataReception = datagramPacket.getData();
+        String chaineEnvoyee = new String(dataReception);
 
-        String test = new String(dataReception);
+        System.out.println(chaineEnvoyee.toString());
+
+        System.out.println(chaineEnvoyee);
 
 
-        System.out.println(test);
     }
 }

@@ -6,12 +6,11 @@ import java.net.InetAddress;
 public class ClientUDP {
 
 
-    public ClientUDP(String adresse, int port) throws IOException {
+    public ClientUDP(String adresse, int port, String message) throws IOException {
 
         byte[] data;
 
-        String chainetest = "Tentative De Connexion";
-        data = chainetest.getBytes();
+        data = message.getBytes();
 
 
         DatagramSocket datagramSocket = new DatagramSocket();
